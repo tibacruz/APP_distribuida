@@ -9,7 +9,11 @@ def credito(valor, cliente, limite_credito, limite_transferencia):
     cliente['saldo'] = valor + cliente ['saldo']
 
 def debito(valor, cliente, limite_credito, limite_transferencia):
-    pass # crie aqui a funcao debito
-
+    cliente['saldo'] = valor - cliente ['saldo']
+    if cliente['saldo'] < 0:
+        raise LimiteCreditoExcedidoException
+    else:
+        cliente['saldo']
+    
 def transferencia(lista_clientes,id_cliente_doador,id_cliente_receptor,valor,limite_credito,limite_transferencia):
-    pass # crie aqui a funcao transferencia
+    pass # crie aqui a funcao transferenciassssssss
