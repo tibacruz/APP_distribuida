@@ -18,7 +18,6 @@ def excluir_cliente(clientes, id):
             del clientes[i]
             break
 
-
 def pesquisar_cliente(clientes, id):
     todos_indices = list(range(len(clientes)))
     for i in todos_indices:
