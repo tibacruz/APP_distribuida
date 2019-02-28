@@ -15,4 +15,5 @@ def debito(valor, cliente, limite_credito, limite_transferencia):
     cliente['saldo'] = cliente['saldo'] - valor
     
 def transferencia(lista_clientes,id_cliente_doador,id_cliente_receptor,valor,limite_credito,limite_transferencia):
+    Clientes.minhafuncao()
     pass # crie aqui a funcao transferencias
